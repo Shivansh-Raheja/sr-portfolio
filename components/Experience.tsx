@@ -98,7 +98,7 @@ const Experience = () => {
               <motion.div
                 key={exp.company}
                 variants={itemVariants}
-                className="relative flex items-start space-x-8"
+                className="relative flex flex-col md:flex-row md:items-start md:space-x-8 space-y-4 md:space-y-0"
               >
                 {/* Timeline dot */}
                 <div className="hidden md:flex items-center justify-center w-16 h-16 bg-primary-600 rounded-full shadow-lg z-10">
@@ -108,7 +108,7 @@ const Experience = () => {
                 {/* Content */}
                 <motion.div
                   whileHover={{ y: -5 }}
-                  className="flex-1 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100"
+                  className="flex-1 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 md:p-8 border border-gray-100"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                     <div>

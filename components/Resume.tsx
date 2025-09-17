@@ -60,7 +60,10 @@ const Resume = () => {
               font-size: 12px; 
               font-weight: 500; 
             }
-            .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+            .grid-2 { display: grid; grid-template-columns: 1fr; gap: 30px; }
+            @media (min-width: 1024px) {
+              .grid-2 { grid-template-columns: 1fr 1fr; }
+            }
             .summary { font-size: 14px; color: #374151; line-height: 1.6; }
             @media print { 
               body { padding: 0; }
@@ -99,7 +102,7 @@ const Resume = () => {
           </button>
         </div>
 
-        <div ref={printRef} className="bg-white rounded-xl shadow-lg border border-gray-100 p-8">
+        <div ref={printRef} className="bg-white rounded-xl shadow-lg border border-gray-100 p-4 md:p-8 overflow-x-auto">
           {/* Header */}
           <div className="header mb-8">
             <div className="name">Shivansh Raheja</div>
@@ -119,7 +122,7 @@ const Resume = () => {
           </div>
 
           {/* Experience & Projects */}
-          <div className="section grid-2 gap-8">
+          <div className="section grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="section-title text-xl font-bold text-gray-900 border-b pb-2">Professional Experience</div>
               
@@ -180,7 +183,7 @@ const Resume = () => {
           </div>
 
           {/* Education & Contact */}
-          <div className="section grid-2 gap-8">
+          <div className="section grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="space-y-2">
               <div className="section-title text-xl font-bold text-gray-900 border-b pb-2">Education</div>
               <div className="job space-y-1">

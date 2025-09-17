@@ -81,7 +81,8 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-primary-600 p-2"
+              className="text-gray-700 hover:text-primary-600 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
