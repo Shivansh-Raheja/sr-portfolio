@@ -143,13 +143,13 @@ const Contact = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
           >
-            Let's Work Together
+            Let&apos;s Work Together
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Ready to bring your ideas to life? Let's discuss your next project.
+            Ready to bring your ideas to life? Let&apos;s discuss your next project.
           </motion.p>
         </motion.div>
 
@@ -164,8 +164,8 @@ const Contact = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                I&apos;m always interested in new opportunities and exciting projects. 
+                Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
               </p>
             </motion.div>
 
